@@ -11,11 +11,35 @@
   background-color: red;
 }
 
+
+/* ex 2 */
 .ex-2-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-2-square:active {
+  background: pink;
+  animation-name: ex-2;
+  animation-duration: 3s;
+}
+
+@keyframes ex-2 {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+
+  to {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* ex 3 */
+
+
 .ex-3-square {
   width: 100px;
   height: 100px;
