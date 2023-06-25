@@ -60,6 +60,18 @@
   height: 100px;
   background: red;
 }
+
+.ex-4-square:hover {
+  animation-name: ex-4;
+  animation-duration: 3s; 
+}
+
+@keyframes ex-4 {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+/* ex 5 */
 .ex-5-square {
   margin: 20px;
   width: 60px;
