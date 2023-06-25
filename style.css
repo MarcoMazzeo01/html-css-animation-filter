@@ -192,11 +192,26 @@
   }
 }
 
-
-
+/* ex 11 */
 .ex-11-icon {
   font-size: 60px;
+  animation: ex-11 4s infinite linear;
 }
+
+@keyframes ex-11 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .ex-12-button,
 .ex-13-button {
   position: relative;
