@@ -163,11 +163,26 @@
   to {border-radius: 100px;}
 }
 
-
+/* ex 9 */
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
 }
+
+.ex-9-img:hover {
+  animation: ex-7-hue 3s both,ex-7-gray 3.5s forwards, ex-8-borders 2s both, ex-9-scale 2s forwards;
+}
+
+@keyframes ex-9-scale {
+  from {
+    width: 400px;
+  }
+
+  to {
+    width: 500px;
+  }
+}
+
 
 
 .ex-10-icon {
