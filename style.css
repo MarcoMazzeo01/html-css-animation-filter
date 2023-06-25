@@ -129,7 +129,7 @@
 
 /* ex 7 */
 .ex-7-img:hover {
-  animation: ex-7-gray 4s, ex-7-shadow 3s;
+  animation: ex-7-gray 4s, ex-7-hue 3s;
 }
 
 /* non riesco ad applicarli entrambi, nonostante la sintassi sia corretta??? */
@@ -143,7 +143,7 @@
   }
 } 
 
-@keyframes ex-7-shadow {
+@keyframes ex-7-hue {
   from {
     filter:hue-rotate(0deg);
   }
@@ -153,10 +153,23 @@
   }
 }
 
+/* ex 8 */
+.ex-8-img:hover {
+  animation: ex-7-hue 3s both,ex-7-gray 3.5s forwards, ex-8-borders 1s both;
+}
+
+@keyframes ex-8-borders{
+  from {border-radius: 0px;}
+  to {border-radius: 100px;}
+}
+
+
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
 }
+
+
 .ex-10-icon {
   font-size: 60px;
 }
