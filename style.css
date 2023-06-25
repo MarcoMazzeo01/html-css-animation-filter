@@ -38,13 +38,23 @@
 }
 
 /* ex 3 */
-
-
 .ex-3-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-3-square:hover {
+  animation-name: ex-3;
+  animation-duration: 3s;
+}
+
+@keyframes ex-3{
+  from {border-radius: 0%;}
+  to {border-radius: 100%;}
+}
+
+/* ex 4 */
 .ex-4-square {
   width: 100px;
   height: 100px;
