@@ -127,6 +127,33 @@
   filter: grayscale(100%);
 }
 
+/* ex 7 */
+.ex-7-img:hover {
+  animation-name: ex-7-gray, ex-7-shadow;
+  animation-duration: 3s;
+}
+
+/* non riesco ad applicarli entrambi, nonostante la sintassi sia corretta??? */
+@keyframes ex-7-gray {
+  from {
+    filter: grayscale(0%);
+  }
+
+  to {
+    filter: grayscale(100%);
+  }
+} 
+
+@keyframes ex-7-shadow {
+  from {
+    filter: drop-shadow(0px 0px 0px blue);
+  }
+
+  to {
+    filter: drop-shadow(10px 10px 20px blue);
+  }
+}
+
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
