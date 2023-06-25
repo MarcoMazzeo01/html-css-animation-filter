@@ -129,33 +129,23 @@
 
 /* ex 7 */
 .ex-7-img:hover {
-  animation: ex-7-gray 4s, ex-7-hue 3s;
+  animation: ex-7-gray 4s;
 }
 
-/* non riesco ad applicarli entrambi, nonostante la sintassi sia corretta??? */
-@keyframes ex-7-gray {
+@keyframes ex-7-filter {
   from {
-    filter: grayscale(0%);
+    filter: grayscale(0%) invert(0%);
   }
 
   to {
-    filter: grayscale(100%);
+    filter: grayscale(100%) invert(100%);
   }
 } 
 
-@keyframes ex-7-hue {
-  from {
-    filter:hue-rotate(0deg);
-  }
-
-  to {
-    filter: hue-rotate(90deg);
-  }
-}
 
 /* ex 8 */
 .ex-8-img:hover {
-  animation: ex-7-hue 3s both,ex-7-gray 3.5s forwards, ex-8-borders 1s both;
+  animation: ex-7-filter 3.5s forwards, ex-8-borders 1s both;
 }
 
 @keyframes ex-8-borders{
@@ -170,7 +160,7 @@
 }
 
 .ex-9-img:hover {
-  animation: ex-7-hue 3s both,ex-7-gray 3.5s forwards, ex-8-borders 2s both, ex-9-scale 2s forwards;
+  animation: ex-7-filter 3.5s forwards, ex-8-borders 2s both, ex-9-scale 2s forwards;
 }
 
 @keyframes ex-9-scale {
