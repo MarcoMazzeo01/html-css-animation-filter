@@ -129,7 +129,7 @@
 
 /* ex 7 */
 .ex-7-img:hover {
-  animation: ex-7-gray 4s;
+  animation: ex-7-filter 4s;
 }
 
 @keyframes ex-7-filter {
